@@ -6,6 +6,12 @@ export type CanvasState = {
   offset: number
 }
 
+export type TimerState = {
+  seconds: number,
+  milliseconds: number,
+  counter: number
+}
+
 export type CanvasActions = |{
   type: "updatePencil",
   value: boolean
@@ -24,5 +30,18 @@ export type CanvasActions = |{
 }
 |{
   type: "updateOffset",
+  value: number
+}
+
+export type TimerActions = |{
+  type: 'updateSeconds',
+  value: number
+}
+|{
+  type: 'updateMilliseconds',
+  value: number
+}
+|{
+  type: 'updateCounter',
   value: number
 }
