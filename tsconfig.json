@@ -16,7 +16,11 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./app/*"]
+      "~/*": ["./app/*"],
+      "@comp/*": ["./app/components/*"],
+      "@hook/*": ["./app/hooks/*"],
+      "@route/*": ["./app/routes/*"],
+      "@model/*": ["./app/models/*"]
     },
     "skipLibCheck": true,
 
